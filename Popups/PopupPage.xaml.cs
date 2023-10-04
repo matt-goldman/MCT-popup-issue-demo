@@ -9,9 +9,11 @@ public partial class PopupPage : Popup
 		InitializeComponent();
 	}
 
-    protected override async Task OnDismissedByTappingOutsideOfPopup()
-    {
-        //return base.OnDismissedByTappingOutsideOfPopup();
-        await App.Current.MainPage.Navigation.PopModalAsync();
-    }
+    // WORKAROUND: Uncomment the following code for a minor workaround
+
+    //protected override async Task OnDismissedByTappingOutsideOfPopup()
+    //{
+    //    //return base.OnDismissedByTappingOutsideOfPopup();
+    //    await App.Current.MainPage.Navigation.PopModalAsync();
+    //}
 }
